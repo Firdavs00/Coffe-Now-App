@@ -32,16 +32,23 @@ class PopularCoffeCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setUp()
         contentView.backgroundColor = .white
         contentView.layer.cornerRadius = 20
+        initSetup()
+        initConstraint()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUp() {
+    func initSetup() {
+        
+        contentView.addSubview(popularBrandImgBackView)
+        popularBrandImgBackView.addSubview(logoImg)
+    }
+    
+    func initConstraint() {
         
         contentView.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -49,16 +56,13 @@ class PopularCoffeCollectionViewCell: UICollectionViewCell {
             make.height.width.equalTo(80/812 * windowHeight)
         }
         
-        contentView.addSubview(popularBrandImgBackView)
         popularBrandImgBackView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
-        popularBrandImgBackView.addSubview(logoImg)
         logoImg.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
         }
     }
-    
 }

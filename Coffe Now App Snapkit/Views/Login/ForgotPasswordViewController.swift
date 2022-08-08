@@ -28,7 +28,7 @@ class ForgotPasswordViewController: UIViewController {
     }()
     
     private lazy var sendMessageTitle: UILabel = {
-      let label = UILabel()
+        let label = UILabel()
         label.text = "We’ll send a password reset\nlink to your email."
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -73,47 +73,52 @@ class ForgotPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setUp()
+        initSetup()
+        initConstraint()
     }
     
-    func setUp() {
+    func initSetup() {
         
         view.addSubview(imageView)
+        view.addSubview(lable)
+        view.addSubview(sendMessageTitle)
+        view.addSubview(headerTitle)
+        view.addSubview(textFeild)
+        view.addSubview(button)
+    }
+    
+    func initConstraint() {
+        
         imageView.snp.makeConstraints { make in
             make.width.height.equalTo(88)
             make.centerX.equalToSuperview()
             make.top.equalTo(52)
         }
         
-        view.addSubview(lable)
         lable.snp.makeConstraints { make in
             make.top.equalTo(imageView.snp.bottom).inset(-16)
             make.height.equalTo(36)
             make.centerX.equalToSuperview()
         }
         
-        view.addSubview(sendMessageTitle)
         sendMessageTitle.snp.makeConstraints { make in
             make.top.equalTo(lable.snp.bottom).inset(-6)
             make.centerX.equalToSuperview()
             make.width.equalTo(197)
         }
         
-        view.addSubview(headerTitle)
         headerTitle.snp.makeConstraints { make in
             make.top.equalTo(sendMessageTitle.snp.bottom).inset(-20)
             make.leading.equalTo(20)
         }
         
-        view.addSubview(textFeild)
         textFeild.snp.makeConstraints { make in
-                make.top.equalTo(headerTitle.snp.bottom).inset(-6)
-                make.leading.equalTo(20)
-                make.trailing.equalTo(-20)
-                make.height.equalTo(50)
+            make.top.equalTo(headerTitle.snp.bottom).inset(-6)
+            make.leading.equalTo(20)
+            make.trailing.equalTo(-20)
+            make.height.equalTo(50)
         }
         
-        view.addSubview(button)
         button.snp.makeConstraints { make in
             make.top.equalTo(textFeild.snp.bottom).inset(-44)
             make.leading.equalTo(20)

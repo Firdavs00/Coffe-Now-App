@@ -13,7 +13,7 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
     var action: ((Bool) -> Void)?
     
     private lazy var cellView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = .clear
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 10
@@ -28,9 +28,9 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
     }()
     
     private lazy var viewBtn: UIButton = {
-       let btn = UIButton()
+        let btn = UIButton()
         btn.addTarget(self, action: #selector(tapped(_ :)), for: .touchUpInside)
-
+        
         return btn
     }()
     
@@ -67,19 +67,27 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = .white
-        
-        setupCell()
-//        contentView.backgroundColor = .blue
         contentView.clipsToBounds = true
-//        contentView.layer.cornerRadius = 8
+        initSetup()
+        initConstraint()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupCell() {
+    func initSetup() {
+        
+        contentView.addSubview(cellView)
+        cellView.addSubview(coffeImg)
+        cellView.addSubview(nameTitle)
+        cellView.addSubview(priceTitle)
+        cellView.addSubview(bascetImg)
+        cellView.addSubview(viewBtn)
+    }
     
+    func initConstraint() {
+        
         contentView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalTo(20)
@@ -87,12 +95,10 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
             make.width.equalTo(157/375 * windowWidth)
         }
         
-        contentView.addSubview(cellView)
         cellView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
-        cellView.addSubview(coffeImg)
         coffeImg.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalToSuperview()
@@ -100,28 +106,24 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
             make.width.equalTo(157/375 * windowWidth)
         }
         
-        cellView.addSubview(nameTitle)
         nameTitle.snp.makeConstraints { make in
             make.top.equalTo(coffeImg.snp.bottom).inset(-8)
             make.leading.equalTo(10)
             make.height.equalTo(18/812 * windowHeight)
         }
         
-        cellView.addSubview(priceTitle)
         priceTitle.snp.makeConstraints { make in
             make.top.equalTo(nameTitle.snp.bottom).inset(-8)
             make.leading.equalTo(10)
             make.height.equalTo(22/812 * windowHeight)
         }
         
-        cellView.addSubview(bascetImg)
         bascetImg.snp.makeConstraints { make in
             make.top.equalTo(nameTitle.snp.bottom).inset(-6)
             make.trailing.equalTo(-10)
             make.height.width.equalTo(26/812 * windowHeight)
         }
         
-        cellView.addSubview(viewBtn)
         viewBtn.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
@@ -129,40 +131,12 @@ class RecommendedCollectionViewCell: UICollectionViewCell {
     
     @objc func tapped(_ sender: UIButton) {
         
-//        let vc = ShopDetailsViewController(nibName: "ShopDetailsViewController", bundle: nil)
-//        self.navigationController?.pushViewController(vc, animated: true)
-//        if let action = action {
-//            action(true)
-//        }
+        //        let vc = ShopDetailsViewController(nibName: "ShopDetailsViewController", bundle: nil)
+        //        self.navigationController?.pushViewController(vc, animated: true)
+        //        if let action = action {
+        //            action(true)
+        //        }
         print("12345")
     }
 }
 
-extension UIView {
-
-  // OUTPUT 1
-  func dropShadow(scale: Bool = true) {
-    layer.masksToBounds = false
-    layer.shadowColor = UIColor.black.cgColor
-    layer.shadowOpacity = 0.5
-    layer.shadowOffset = CGSize(width: -1, height: 1)
-    layer.shadowRadius = 1
-
-    layer.shadowPath = UIBezierPath(rect: bounds).cgPath
-    layer.shouldRasterize = true
-    layer.rasterizationScale = scale ? UIScreen.main.scale : 1
-  }
-
-  // OUTPUT 2
-  func dropShadow(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
-    layer.masksToBounds = false
-    layer.shadowColor = color.cgColor
-    layer.shadowOpacity = opacity
-    layer.shadowOffset = offSet
-    layer.shadowRadius = radius
-
-    layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-    layer.shouldRasterize = true
-    layer.rasterizationScale = scale ? UIScreen.main.scale : 1
-  }
-}

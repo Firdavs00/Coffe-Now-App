@@ -11,6 +11,7 @@ class TextFeildTableViewCell: UITableViewCell {
     private var model: TextFeildModel!
     var type: TextFieldType = .email
     
+    var actionForgotPassword: ((Bool) -> Void)?
     private lazy var title: UILabel = {
         let text = UILabel()
         text.text = type.headerTitle
@@ -40,12 +41,12 @@ class TextFeildTableViewCell: UITableViewCell {
     }()
     
     private lazy var forgotPasswordBtn: UIButton = {
-       let btn = UIButton(type: .system)
+        let btn = UIButton(type: .system)
         btn.setTitle("Forgot Password ?", for: .normal)
         btn.setTitleColor(UIColor(hexString: "FF9314"), for: .normal)
         btn.titleLabel?.font = UIFont.systemFont(ofSize: 12,weight: .medium)
         btn.addTarget(self, action: #selector(tapped(_ :)), for: .touchUpInside)
-
+        
         return btn
     }()
     
@@ -57,7 +58,8 @@ class TextFeildTableViewCell: UITableViewCell {
         super.init(style: .default, reuseIdentifier: "TextFeildTableViewCell")
         self.model = model
         self.type = type
-        self.setUp()
+        initSetup()
+        initConstraint()
         self.initData()
     }
     
@@ -65,15 +67,22 @@ class TextFeildTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUp() {
+    func initSetup() {
         
         contentView.addSubview(title)
+        contentView.addSubview(textFeild)
+        textFeild.addSubview(hideBtn)
+        contentView.addSubview(forgotPasswordBtn)
+        
+    }
+    
+    func initConstraint() {
+        
         title.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).inset(0)
             make.leading.equalTo(contentView.snp.leading)
         }
         
-        contentView.addSubview(textFeild)
         textFeild.snp.makeConstraints { make in
             make.top.equalTo(title.snp.bottom).inset(-6)
             make.leading.equalTo(contentView.snp.leading)
@@ -83,18 +92,17 @@ class TextFeildTableViewCell: UITableViewCell {
         
         if type.isPassword {
             
-            textFeild.addSubview(hideBtn)
             hideBtn.snp.makeConstraints { make in
                 make.centerY.equalToSuperview()
                 make.trailing.equalTo(textFeild.snp.trailing).inset(22)
                 make.height.width.equalTo(16/812 * windowHeight)
             }
-        contentView.addSubview(forgotPasswordBtn)
-        forgotPasswordBtn.snp.makeConstraints { make in
-            make.top.equalTo(textFeild.snp.bottom).inset(-9)
-            make.trailing.equalTo(0)
-            make.height.equalTo(18/812 * windowHeight)
-                }
+            
+            forgotPasswordBtn.snp.makeConstraints { make in
+                make.top.equalTo(textFeild.snp.bottom).inset(-9)
+                make.trailing.equalTo(0)
+                make.height.equalTo(18/812 * windowHeight)
+            }
         }
     }
     
@@ -105,6 +113,10 @@ class TextFeildTableViewCell: UITableViewCell {
     
     ///Implementation of block action
     @objc func tapped(_ sender: UIButton) {
+        
+        if let action = self.actionForgotPassword {
+            action(true)
+        }
         print("BTN")
     }
 }

@@ -37,28 +37,35 @@ class AddressSetupViewController: UIViewController {
         tableView.register(TextFeildTableViewCell.self, forCellReuseIdentifier: "TextFeildTableViewCell")
         tableView.register(VerticalTextFeildUITableViewCell.self, forCellReuseIdentifier: "VerticalTextFeildUITableViewCell")
         tableView.register(ButtonTableViewCell.self, forCellReuseIdentifier: "ButtonTableViewCell")
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-        setUp()
+        
+        initSetup()
+        initConstraint()
     }
 
-    func setUp() {
-
+    func initSetup() {
+        
         view.addSubview(imageView)
+        view.addSubview(lable)
+        view.addSubview(tableView)
+    }
+    
+    func initConstraint() {
+
         imageView.snp.makeConstraints { make in
             make.width.height.equalTo(88/812 * windowHeight)
             make.centerX.equalToSuperview()
             make.top.equalTo(52)
         }
 
-        view.addSubview(lable)
         lable.snp.makeConstraints { make in
             make.top.equalTo(imageView.snp.bottom).inset(-16)
             make.centerX.equalToSuperview()
         }
 
-        view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.top.equalTo(lable.snp.bottom).inset(-32)
             make.leading.equalTo(view.snp.leading).inset(20)
@@ -82,24 +89,30 @@ extension AddressSetupViewController: UITableViewDelegate, UITableViewDataSource
             cell.selectionStyle = .none
             return cell
         } else if indexPath.row == 1 {
+            
             let cell = TextFeildTableViewCell(TextFeildModel(headerTitle: TextFieldType.addess_line_2.headerTitle, placeHolder: TextFieldType.addess_line_2.placeHolder), type: .fullname)
             cell.backgroundColor = .clear
             cell.selectionStyle = .none
             return cell
             
         } else if indexPath.row == 2 {
+            
             let cell = VerticalTextFeildUITableViewCell(TextFeildModel(headerTitle: TextFieldType.zipCode.headerTitle, placeHolder: TextFieldType.zipCode.placeHolder))
             cell.selectionStyle = .none
             return cell
+            
         } else if indexPath.row == 3 {
+            
             let cell = TextFeildTableViewCell(TextFeildModel(headerTitle: TextFieldType.country.headerTitle, placeHolder: TextFieldType.country.placeHolder),type:  .fullname)
             cell.selectionStyle = .none
             return cell
+            
         } else if indexPath.row == 4 {
+            
             let cell = ButtonTableViewCell(ButtonModel(buttonTitle: ButtonType.address.buttonTitle, questionTitle: ButtonType.address.questiontitle, additionalButtonTitle: ""))
             cell.action = { click in
-                let vc = ForgotPasswordViewController()
-                self.navigationController?.pushViewController(vc, animated: true)
+//                let vc = ForgotPasswordViewController()
+//                self.navigationController?.pushViewController(vc, animated: true)
             }
             return cell
         }

@@ -10,7 +10,7 @@ import UIKit
 class GoogleAndFacebookTableViewCell: UITableViewCell {
     
     private lazy var leftDivider: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = UIColor(hexString: "D2D2D2")
         return view
     }()
@@ -22,13 +22,13 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
         return label
     }()
     private lazy var rightDivider: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = UIColor(hexString: "D2D2D2")
         return view
     }()
     
     private lazy var imageGoogleBackView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = .white
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(hexString: "EEEEEE").cgColor
@@ -46,7 +46,7 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
     }()
     
     private lazy var imageFacebookBackView: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = .white
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor(hexString: "EEEEEE").cgColor
@@ -64,9 +64,10 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        contentView.backgroundColor = .red
-        setUp()
+        initSetup()
+        initConstraint()
         
         
     }
@@ -74,16 +75,25 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUp() {
+    func initSetup() {
         
         contentView.addSubview(leftDivider)
+        contentView.addSubview(title)
+        contentView.addSubview(rightDivider)
+        contentView.addSubview(imageGoogleBackView)
+        imageGoogleBackView.addSubview(imageGoogle)
+        contentView.addSubview(imageFacebookBackView)
+        imageFacebookBackView.addSubview(imageFacebook)
+    }
+    
+    func initConstraint() {
+        
         leftDivider.snp.makeConstraints { make in
             make.top.equalTo(13.5)
             make.height.equalTo(1/812 * windowHeight)
             make.width.equalTo(135/375 * windowWidth)
         }
         
-        contentView.addSubview(title)
         title.snp.makeConstraints { make in
             make.top.equalTo(2)
             make.height.equalTo(27/812 * windowHeight)
@@ -91,7 +101,6 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
             make.leading.equalTo(leftDivider.snp.trailing).inset(-20)
         }
         
-        contentView.addSubview(rightDivider)
         rightDivider.snp.makeConstraints { make in
             make.top.equalTo(13.5)
             make.height.equalTo(1/812 * windowHeight)
@@ -99,28 +108,24 @@ class GoogleAndFacebookTableViewCell: UITableViewCell {
             make.width.equalTo(135/375 * windowWidth)
         }
         
-        contentView.addSubview(imageGoogleBackView)
         imageGoogleBackView.snp.makeConstraints { make in
             make.top.equalTo(title.snp.bottom).inset(-33)
             make.height.width.equalTo(80/812 * windowHeight)
             make.leading.equalTo(60)
         }
         
-        imageGoogleBackView.addSubview(imageGoogle)
         imageGoogle.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
             make.width.height.equalTo(42/812 * windowHeight)
         }
-
-        contentView.addSubview(imageFacebookBackView)
+        
         imageFacebookBackView.snp.makeConstraints { make in
             make.top.equalTo(title.snp.bottom).inset(-33)
             make.trailing.equalTo(-60)
             make.height.width.equalTo(80/812 * windowHeight)
         }
         
-        imageFacebookBackView.addSubview(imageFacebook)
         imageFacebook.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()

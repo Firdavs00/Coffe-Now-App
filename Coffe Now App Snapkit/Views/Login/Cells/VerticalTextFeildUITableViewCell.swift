@@ -13,6 +13,7 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     var type: TextFieldType = .zipCode
     
     private lazy var title1: UILabel = {
+        
         let text = UILabel()
         text.text = type.headerTitle
         text.frame = CGRect(x: 0, y: 0, width: 39/375 * windowWidth, height: 21/812 * windowHeight)
@@ -23,6 +24,7 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     }()
     
     private lazy var title2: UILabel = {
+        
         let text = UILabel()
         text.text = type.headerTitle
         text.frame = CGRect(x: 0, y: 0, width: 39/375 * windowWidth, height: 21/812 * windowHeight)
@@ -33,6 +35,7 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     }()
     
     private lazy var textFeild1: UITextField = {
+        
         let textFeild = UITextField()
         textFeild.layer.backgroundColor = UIColor(hexString: "F5F5F5" ).cgColor
         textFeild.layer.cornerRadius = 8
@@ -44,6 +47,7 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     }()
     
     private lazy var textFeild2: UITextField = {
+        
         let textFeild = UITextField()
         textFeild.layer.backgroundColor = UIColor(hexString: "F5F5F5" ).cgColor
         textFeild.layer.cornerRadius = 8
@@ -55,6 +59,7 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     }()
     
     private lazy var hideBtn: UIButton = {
+        
         let button = UIButton()
         button.setImage(UIImage(named: "ic_hide"), for: .normal)
         button.backgroundColor = .orange
@@ -65,7 +70,8 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     init(_ model: TextFeildModel) {
         super.init(style: .default, reuseIdentifier: "VerticalTextFeildUITableViewCell")
         self.model = model
-        setUp()
+        initSetup()
+        initConstraint()
     }
     
     
@@ -73,29 +79,34 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUp() {
+    func initSetup() {
+        
         contentView.addSubview(title1)
+        contentView.addSubview(textFeild1)
+        contentView.addSubview(title2)
+        contentView.addSubview(textFeild2)
+    }
+    
+    func initConstraint() {
+        
         title1.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).inset(0)
             make.leading.equalTo(contentView.snp.leading)
             make.width.equalTo(65/375 * windowWidth)
         }
         
-        contentView.addSubview(textFeild1)
         textFeild1.snp.makeConstraints { make in
             make.top.equalTo(title1.snp.bottom).inset(-6)
             make.leading.equalTo(contentView.snp.leading)
             make.height.equalTo(50/812 * windowHeight)
             make.width.equalTo(160/375 * windowWidth)
         }
-        contentView.addSubview(title2)
+        
         title2.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).inset(0)
             make.leading.equalTo(textFeild1.snp.trailing).inset(-20)
-            
         }
         
-        contentView.addSubview(textFeild2)
         textFeild2.snp.makeConstraints { make in
             make.top.equalTo(title2.snp.bottom).inset(-6)
             make.leading.equalTo(textFeild1.snp.trailing).inset(-15)
@@ -105,10 +116,10 @@ class VerticalTextFeildUITableViewCell: UITableViewCell {
     }
     
     func initData() {
+        
         self.title1.text = model.headerTitle
         self.title2.text = model.headerTitle
         self.textFeild1.placeholder = model.placeHolder
         self.textFeild2.placeholder = model.placeHolder
     }
-    
 }

@@ -93,6 +93,5 @@ extension RecommendedForYouTableViewCell: UICollectionViewDataSource {
 //
 //        }
         return cell
-      
     }
 }

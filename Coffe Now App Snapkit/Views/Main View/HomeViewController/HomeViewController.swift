@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
         tableView.register(AdvertisingTableViewCell.self, forCellReuseIdentifier: "AdvertisingTableViewCell")
         tableView.register(RecommendedForYouTableViewCell.self, forCellReuseIdentifier: "RecommendedForYouTableViewCell")
         tableView.register(PopularBrandTableViewCell.self, forCellReuseIdentifier: "PopularBrandTableViewCell")
+        
         view.backgroundColor = .white
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,10 +33,10 @@ class HomeViewController: UIViewController {
         tableView.separatorStyle = .none
         self.navigationItem.hidesBackButton = true
 //        self.navigationController?.isNavigationBarHidden = true
-        setUp()
+        initSetup()
     }
     
-    func setUp() {
+    func initSetup() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()

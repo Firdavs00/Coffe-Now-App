@@ -32,19 +32,25 @@ class LogoAndTitle: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.initSetup()
+        self.initConstraint()
         
     }
     
     func initSetup() {
 
         self.addSubview(iconImages)
+        self.addSubview(titleLabel)
+
+    }
+    
+    func initConstraint() {
+        
         iconImages.snp.makeConstraints { make in
             make.width.height.equalTo(88/812 * windowHeight)
             make.centerX.equalToSuperview()
             make.top.equalTo(0)
         }
         
-        self.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in
             make.top.equalTo(iconImages.snp.bottom).inset(-16)
             make.centerX.equalToSuperview()

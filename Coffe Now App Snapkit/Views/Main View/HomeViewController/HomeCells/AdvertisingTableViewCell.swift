@@ -44,7 +44,5 @@ class AdvertisingTableViewCell: UITableViewCell {
         advertisingImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
     }
-
 }
