@@ -7,7 +7,11 @@
 
 import UIKit
 
-@main
+var windowWidth = UIScreen.main.bounds.width
+var windowHeight = UIScreen.main.bounds.height
+
+
+ @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

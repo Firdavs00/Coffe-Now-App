@@ -7,23 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2338B32885214A007BA500 /* GoogleAndFacebookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2338B22885214A007BA500 /* GoogleAndFacebookTableViewCell.swift */; };
+		6F3B402B288695B400F4D15E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B402A288695B400F4D15E /* RegisterViewController.swift */; };
+		6F3B403128872AC400F4D15E /* AddressSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B403028872AC400F4D15E /* AddressSetupViewController.swift */; };
+		6F3B40332888D6E800F4D15E /* VerticalTextFeildUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B40322888D6E800F4D15E /* VerticalTextFeildUITableViewCell.swift */; };
+		6F3B40352888E6B900F4D15E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B40342888E6B900F4D15E /* ForgotPasswordViewController.swift */; };
+		6F3B40392888F3BA00F4D15E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B40382888F3BA00F4D15E /* HomeViewController.swift */; };
+		6F3B403C2888F65E00F4D15E /* NavigationBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B403B2888F65E00F4D15E /* NavigationBarTableViewCell.swift */; };
+		6F6D0866287DE8C600BA2AD3 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D0865287DE8C600BA2AD3 /* ButtonTableViewCell.swift */; };
+		6F6D0868287DE91D00BA2AD3 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D0867287DE91D00BA2AD3 /* ButtonModel.swift */; };
+		6F6D086A287E6BE100BA2AD3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D0869287E6BE100BA2AD3 /* Extensions.swift */; };
+		6F7A7422288941A5004F4C00 /* AdvertisingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A7421288941A5004F4C00 /* AdvertisingTableViewCell.swift */; };
+		6F7A742428896051004F4C00 /* RecommendedForYouTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A742328896051004F4C00 /* RecommendedForYouTableViewCell.swift */; };
+		6F7A742728897F36004F4C00 /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A742628897F36004F4C00 /* RecommendedCollectionViewCell.swift */; };
+		6F7A742B2889B45D004F4C00 /* PopularBrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A742A2889B45D004F4C00 /* PopularBrandTableViewCell.swift */; };
+		6F7A742D2889B498004F4C00 /* PopularCoffeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A742C2889B498004F4C00 /* PopularCoffeCollectionViewCell.swift */; };
+		6F7B42232890FB4A0073F5B2 /* LogoAndTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B42222890FB4A0073F5B2 /* LogoAndTitle.swift */; };
+		6F7B4225289117DF0073F5B2 /* Userdefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B4224289117DF0073F5B2 /* Userdefault.swift */; };
+		6F7B4227289165E40073F5B2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B4226289165E40073F5B2 /* SearchViewController.swift */; };
+		6F7B4229289166110073F5B2 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B4228289166110073F5B2 /* DocumentViewController.swift */; };
+		6F7B422B289166360073F5B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B422A289166360073F5B2 /* ProfileViewController.swift */; };
+		6F7B422D289189A70073F5B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B422C289189A70073F5B2 /* BaseViewController.swift */; };
+		6F7B422F2892A3DE0073F5B2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B422E2892A3DE0073F5B2 /* Test.swift */; };
 		6F9AC8942875FF6D00783919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8932875FF6D00783919 /* AppDelegate.swift */; };
 		6F9AC8962875FF6D00783919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8952875FF6D00783919 /* SceneDelegate.swift */; };
-		6F9AC8982875FF6D00783919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8972875FF6D00783919 /* ViewController.swift */; };
+		6F9AC8982875FF6D00783919 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8972875FF6D00783919 /* LoginViewController.swift */; };
 		6F9AC89B2875FF6D00783919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AC8992875FF6D00783919 /* Main.storyboard */; };
 		6F9AC89D2875FF6F00783919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AC89C2875FF6F00783919 /* Assets.xcassets */; };
 		6F9AC8A02875FF6F00783919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9AC89E2875FF6F00783919 /* LaunchScreen.storyboard */; };
+		6F9AC8AC2876B4DF00783919 /* TextFeildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8AB2876B4DF00783919 /* TextFeildTableViewCell.swift */; };
+		6F9AC8AF2876C51200783919 /* TextFeildModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9AC8AE2876C51200783919 /* TextFeildModel.swift */; };
+		6F9B70D22892B17300F8ACAB /* ShopDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B70D12892B17300F8ACAB /* ShopDetailsViewController.swift */; };
+		6FAEEE93287861DA00E0B55C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAEEE92287861DA00E0B55C /* Constants.swift */; };
+		6FF3276C289CFDEA00A24F92 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF3276B289CFDEA00A24F92 /* tabBar.swift */; };
+		E79A8B68C16DB6639979EB22 /* Pods_Coffe_Now_App_Snapkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1253D4D569E144EB2D1F7A /* Pods_Coffe_Now_App_Snapkit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15E2F50CCBA2F64CC7E406DC /* Pods-Coffe Now App Snapkit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Now App Snapkit.release.xcconfig"; path = "Target Support Files/Pods-Coffe Now App Snapkit/Pods-Coffe Now App Snapkit.release.xcconfig"; sourceTree = "<group>"; };
+		61836D1068917F0A2CF828C7 /* Pods-Coffe Now App Snapkit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Now App Snapkit.debug.xcconfig"; path = "Target Support Files/Pods-Coffe Now App Snapkit/Pods-Coffe Now App Snapkit.debug.xcconfig"; sourceTree = "<group>"; };
+		6F2338B22885214A007BA500 /* GoogleAndFacebookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAndFacebookTableViewCell.swift; sourceTree = "<group>"; };
+		6F3B402A288695B400F4D15E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6F3B403028872AC400F4D15E /* AddressSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSetupViewController.swift; sourceTree = "<group>"; };
+		6F3B40322888D6E800F4D15E /* VerticalTextFeildUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextFeildUITableViewCell.swift; sourceTree = "<group>"; };
+		6F3B40342888E6B900F4D15E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		6F3B40382888F3BA00F4D15E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6F3B403B2888F65E00F4D15E /* NavigationBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTableViewCell.swift; sourceTree = "<group>"; };
+		6F6D0865287DE8C600BA2AD3 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		6F6D0867287DE91D00BA2AD3 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		6F6D0869287E6BE100BA2AD3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6F7A7421288941A5004F4C00 /* AdvertisingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingTableViewCell.swift; sourceTree = "<group>"; };
+		6F7A742328896051004F4C00 /* RecommendedForYouTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedForYouTableViewCell.swift; sourceTree = "<group>"; };
+		6F7A742628897F36004F4C00 /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F7A742A2889B45D004F4C00 /* PopularBrandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularBrandTableViewCell.swift; sourceTree = "<group>"; };
+		6F7A742C2889B498004F4C00 /* PopularCoffeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCoffeCollectionViewCell.swift; sourceTree = "<group>"; };
+		6F7B42222890FB4A0073F5B2 /* LogoAndTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAndTitle.swift; sourceTree = "<group>"; };
+		6F7B4224289117DF0073F5B2 /* Userdefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userdefault.swift; sourceTree = "<group>"; };
+		6F7B4226289165E40073F5B2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6F7B4228289166110073F5B2 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
+		6F7B422A289166360073F5B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6F7B422C289189A70073F5B2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6F7B422E2892A3DE0073F5B2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		6F9AC8902875FF6D00783919 /* Coffe Now App Snapkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Now App Snapkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9AC8932875FF6D00783919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F9AC8952875FF6D00783919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F9AC8972875FF6D00783919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F9AC8972875FF6D00783919 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F9AC89A2875FF6D00783919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F9AC89C2875FF6F00783919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F9AC89F2875FF6F00783919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F9AC8A12875FF6F00783919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9AC8AB2876B4DF00783919 /* TextFeildTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFeildTableViewCell.swift; sourceTree = "<group>"; };
+		6F9AC8AE2876C51200783919 /* TextFeildModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFeildModel.swift; sourceTree = "<group>"; };
+		6F9B70D12892B17300F8ACAB /* ShopDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewController.swift; sourceTree = "<group>"; };
+		6FAEEE92287861DA00E0B55C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6FF3276B289CFDEA00A24F92 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		AA1253D4D569E144EB2D1F7A /* Pods_Coffe_Now_App_Snapkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_Now_App_Snapkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +89,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79A8B68C16DB6639979EB22 /* Pods_Coffe_Now_App_Snapkit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454FF4885CEA0350A98D435A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA1253D4D569E144EB2D1F7A /* Pods_Coffe_Now_App_Snapkit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6747B128748F6EDC9F6D07CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61836D1068917F0A2CF828C7 /* Pods-Coffe Now App Snapkit.debug.xcconfig */,
+				15E2F50CCBA2F64CC7E406DC /* Pods-Coffe Now App Snapkit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6F3B402C288695D100F4D15E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6F9AC8AB2876B4DF00783919 /* TextFeildTableViewCell.swift */,
+				6F6D0865287DE8C600BA2AD3 /* ButtonTableViewCell.swift */,
+				6F2338B22885214A007BA500 /* GoogleAndFacebookTableViewCell.swift */,
+				6F3B40322888D6E800F4D15E /* VerticalTextFeildUITableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6F3B40362888F1CC00F4D15E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B42212890FB330073F5B2 /* Components */,
+				6F9AC8A92876B4BA00783919 /* Login */,
+				6F3B40372888F38400F4D15E /* Main View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F3B40372888F38400F4D15E /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B70D02892B13600F8ACAB /* HomeViewController */,
+				6F7B422C289189A70073F5B2 /* BaseViewController.swift */,
+				6F7B4226289165E40073F5B2 /* SearchViewController.swift */,
+				6F7B4228289166110073F5B2 /* DocumentViewController.swift */,
+				6F7B422A289166360073F5B2 /* ProfileViewController.swift */,
+				6F7B422E2892A3DE0073F5B2 /* Test.swift */,
+				6FF3276B289CFDEA00A24F92 /* tabBar.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		6F3B403A2888F63400F4D15E /* HomeCells */ = {
+			isa = PBXGroup;
+			children = (
+				6F7A742528897F0C004F4C00 /* CollectionCells */,
+				6F3B403B2888F65E00F4D15E /* NavigationBarTableViewCell.swift */,
+				6F7A7421288941A5004F4C00 /* AdvertisingTableViewCell.swift */,
+				6F7A742328896051004F4C00 /* RecommendedForYouTableViewCell.swift */,
+				6F7A742A2889B45D004F4C00 /* PopularBrandTableViewCell.swift */,
+			);
+			path = HomeCells;
+			sourceTree = "<group>";
+		};
+		6F7A742528897F0C004F4C00 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				6F7A742628897F36004F4C00 /* RecommendedCollectionViewCell.swift */,
+				6F7A742C2889B498004F4C00 /* PopularCoffeCollectionViewCell.swift */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		6F7B42212890FB330073F5B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B42222890FB4A0073F5B2 /* LogoAndTitle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		6F9AC8872875FF6D00783919 = {
 			isa = PBXGroup;
 			children = (
 				6F9AC8922875FF6D00783919 /* Coffe Now App Snapkit */,
 				6F9AC8912875FF6D00783919 /* Products */,
+				6747B128748F6EDC9F6D07CF /* Pods */,
+				454FF4885CEA0350A98D435A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +198,58 @@
 		6F9AC8922875FF6D00783919 /* Coffe Now App Snapkit */ = {
 			isa = PBXGroup;
 			children = (
+				6F9AC8AD2876C4FE00783919 /* Model */,
+				6FAEEE91287861C900E0B55C /* Utils */,
+				6F3B40362888F1CC00F4D15E /* Views */,
 				6F9AC8932875FF6D00783919 /* AppDelegate.swift */,
 				6F9AC8952875FF6D00783919 /* SceneDelegate.swift */,
-				6F9AC8972875FF6D00783919 /* ViewController.swift */,
 				6F9AC8992875FF6D00783919 /* Main.storyboard */,
 				6F9AC89C2875FF6F00783919 /* Assets.xcassets */,
 				6F9AC89E2875FF6F00783919 /* LaunchScreen.storyboard */,
 				6F9AC8A12875FF6F00783919 /* Info.plist */,
 			);
 			path = "Coffe Now App Snapkit";
+			sourceTree = "<group>";
+		};
+		6F9AC8A92876B4BA00783919 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6F9AC8972875FF6D00783919 /* LoginViewController.swift */,
+				6F3B402A288695B400F4D15E /* RegisterViewController.swift */,
+				6F3B403028872AC400F4D15E /* AddressSetupViewController.swift */,
+				6F3B40342888E6B900F4D15E /* ForgotPasswordViewController.swift */,
+				6F3B402C288695D100F4D15E /* Cells */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6F9AC8AD2876C4FE00783919 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F9AC8AE2876C51200783919 /* TextFeildModel.swift */,
+				6F6D0867287DE91D00BA2AD3 /* ButtonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F9B70D02892B13600F8ACAB /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6F3B40382888F3BA00F4D15E /* HomeViewController.swift */,
+				6F3B403A2888F63400F4D15E /* HomeCells */,
+				6F9B70D12892B17300F8ACAB /* ShopDetailsViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		6FAEEE91287861C900E0B55C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6FAEEE92287861DA00E0B55C /* Constants.swift */,
+				6F6D0869287E6BE100BA2AD3 /* Extensions.swift */,
+				6F7B4224289117DF0073F5B2 /* Userdefault.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +259,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F9AC8A42875FF6F00783919 /* Build configuration list for PBXNativeTarget "Coffe Now App Snapkit" */;
 			buildPhases = (
+				06086E7983612D5DC95C42C0 /* [CP] Check Pods Manifest.lock */,
 				6F9AC88C2875FF6D00783919 /* Sources */,
 				6F9AC88D2875FF6D00783919 /* Frameworks */,
 				6F9AC88E2875FF6D00783919 /* Resources */,
+				1CD7A80FDFE28D20020469D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +320,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06086E7983612D5DC95C42C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffe Now App Snapkit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CD7A80FDFE28D20020469D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffe Now App Snapkit/Pods-Coffe Now App Snapkit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffe Now App Snapkit/Pods-Coffe Now App Snapkit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffe Now App Snapkit/Pods-Coffe Now App Snapkit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F9AC88C2875FF6D00783919 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9AC8982875FF6D00783919 /* ViewController.swift in Sources */,
+				6F6D086A287E6BE100BA2AD3 /* Extensions.swift in Sources */,
+				6F3B402B288695B400F4D15E /* RegisterViewController.swift in Sources */,
+				6F3B403128872AC400F4D15E /* AddressSetupViewController.swift in Sources */,
+				6F7A742428896051004F4C00 /* RecommendedForYouTableViewCell.swift in Sources */,
+				6F9AC8982875FF6D00783919 /* LoginViewController.swift in Sources */,
+				6F7B422D289189A70073F5B2 /* BaseViewController.swift in Sources */,
+				6F6D0868287DE91D00BA2AD3 /* ButtonModel.swift in Sources */,
+				6F7A7422288941A5004F4C00 /* AdvertisingTableViewCell.swift in Sources */,
+				6F3B40392888F3BA00F4D15E /* HomeViewController.swift in Sources */,
+				6FF3276C289CFDEA00A24F92 /* tabBar.swift in Sources */,
+				6F3B403C2888F65E00F4D15E /* NavigationBarTableViewCell.swift in Sources */,
+				6F7B42232890FB4A0073F5B2 /* LogoAndTitle.swift in Sources */,
+				6F7B422B289166360073F5B2 /* ProfileViewController.swift in Sources */,
+				6F7B4229289166110073F5B2 /* DocumentViewController.swift in Sources */,
 				6F9AC8942875FF6D00783919 /* AppDelegate.swift in Sources */,
 				6F9AC8962875FF6D00783919 /* SceneDelegate.swift in Sources */,
+				6F9AC8AC2876B4DF00783919 /* TextFeildTableViewCell.swift in Sources */,
+				6F3B40352888E6B900F4D15E /* ForgotPasswordViewController.swift in Sources */,
+				6F7B422F2892A3DE0073F5B2 /* Test.swift in Sources */,
+				6F9B70D22892B17300F8ACAB /* ShopDetailsViewController.swift in Sources */,
+				6F7A742728897F36004F4C00 /* RecommendedCollectionViewCell.swift in Sources */,
+				6F7A742B2889B45D004F4C00 /* PopularBrandTableViewCell.swift in Sources */,
+				6F2338B32885214A007BA500 /* GoogleAndFacebookTableViewCell.swift in Sources */,
+				6F9AC8AF2876C51200783919 /* TextFeildModel.swift in Sources */,
+				6F7B4227289165E40073F5B2 /* SearchViewController.swift in Sources */,
+				6F6D0866287DE8C600BA2AD3 /* ButtonTableViewCell.swift in Sources */,
+				6F7A742D2889B498004F4C00 /* PopularCoffeCollectionViewCell.swift in Sources */,
+				6F3B40332888D6E800F4D15E /* VerticalTextFeildUITableViewCell.swift in Sources */,
+				6F7B4225289117DF0073F5B2 /* Userdefault.swift in Sources */,
+				6FAEEE93287861DA00E0B55C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +538,7 @@
 		};
 		6F9AC8A52875FF6F00783919 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61836D1068917F0A2CF828C7 /* Pods-Coffe Now App Snapkit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +567,7 @@
 		};
 		6F9AC8A62875FF6F00783919 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E2F50CCBA2F64CC7E406DC /* Pods-Coffe Now App Snapkit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
